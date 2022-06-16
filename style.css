@@ -1,0 +1,516 @@
+body {
+  margin: 0;
+}
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(svg/background.png);
+  background-size: cover;
+}
+
+#start_screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(svg/start_screen.png);
+  background-size: cover;
+}
+
+/* #info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(svg/info.png);
+  background-size: cover;
+} */
+
+#start_knap {
+  position: absolute;
+  width: 18%;
+  height: 11%;
+  top: 55%;
+  left: 74%;
+  padding: 2%;
+  background-image: url(svg/start_knap.png);
+  background-size: cover;
+  cursor: pointer;
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes puls_kf {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* #start_knap2 {
+  position: absolute;
+  width: 18%;
+  height: 11%;
+  top: 31%;
+  left: 72%;
+  padding: 2%;
+  background-image: url(svg/start_knap.png);
+  background-size: cover;
+  cursor: pointer;
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+} */
+
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(svg/game_over.png);
+  background-size: cover;
+}
+
+#game_over_points {
+  position: absolute;
+  top: 80%;
+  left: -14%;
+  width: 93%;
+  height: 20%;
+  text-align: center;
+  font-family: fantasy;
+}
+
+#genstart1 {
+  position: absolute;
+  width: 17%;
+  height: 26%;
+  top: 71%;
+  left: 80%;
+  background-image: url(svg/play_again.png);
+  background-size: cover;
+  cursor: pointer;
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(svg/level_complete.png);
+  background-size: cover;
+}
+
+#level_complete_points {
+  position: absolute;
+  height: 23%;
+  top: 31%;
+  left: 27%;
+  width: 100%;
+  font-family: fantasy;
+  color: orangered;
+}
+
+#genstart2 {
+  position: absolute;
+  width: 17%;
+  height: 26%;
+  top: 71%;
+  left: 80%;
+  background-image: url(svg/play_again.svg);
+  background-size: cover;
+  cursor: pointer;
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+#exit1 {
+  position: absolute;
+  width: 11%;
+  height: 10.3%;
+  top: 4%;
+  left: 86%;
+  background-image: url(svg/exit.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+#exit2 {
+  position: absolute;
+  width: 11%;
+  height: 10.3%;
+  top: 4%;
+  left: 86%;
+  background-image: url(svg/exit.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+#game_foreground {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  background-image: url(svg/face1.svg);
+  background-size: cover;
+  pointer-events: none;
+}
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  pointer-events: none;
+}
+
+/* spil elementer */
+
+#cow_container {
+  width: 10%;
+  aspect-ratio: 100/100;
+  position: absolute;
+}
+
+#cow_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/cow.svg);
+  background-size: cover;
+}
+
+#carrot_container {
+  width: 10%;
+  aspect-ratio: 100/100;
+  position: absolute;
+}
+
+#carrot_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/carrot.svg);
+  background-size: contain;
+}
+
+#chicken_container {
+  width: 10%;
+  aspect-ratio: 100/100;
+  position: absolute;
+}
+
+#chicken_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/chicken.svg);
+  background-size: cover;
+}
+
+#aubergine_container {
+  width: 9%;
+  aspect-ratio: 100/100;
+  position: absolute;
+}
+
+#aubergine_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/aubergine.svg);
+  background-size: cover;
+}
+
+#broccoli_container {
+  width: 9%;
+  aspect-ratio: 100/100;
+  position: absolute;
+}
+
+#broccoli_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/broccoli.svg);
+  background-size: cover;
+}
+
+#pig_container {
+  width: 10%;
+  aspect-ratio: 100/100;
+  position: absolute;
+}
+
+#pig_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/pig.svg);
+  background-size: cover;
+}
+
+/* ui-elementer */
+#time {
+  width: 6%;
+  aspect-ratio: 7/10;
+  position: absolute;
+  top: 31%;
+  left: 2%;
+}
+
+#sand {
+  position: absolute;
+  background-image: url(svg/sand.svg);
+  background-size: cover;
+  width: 80%;
+  height: 70%;
+  top: 14%;
+  left: 7%;
+}
+
+#glas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(svg/glas.svg);
+}
+/* indholdet af timeglasset */
+
+#settings {
+  width: 6%;
+  aspect-ratio: 100/100;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  background-image: url(svg/settings.svg);
+  background-size: cover;
+}
+
+/* heart */
+#life {
+  width: 100%;
+  aspect-ratio: 4/1;
+  position: absolute;
+  top: 1%;
+  left: 0%;
+  background-size: cover;
+}
+
+.heart {
+  width: 8%;
+}
+
+#karma {
+  width: 22%;
+  aspect-ratio: 6;
+  position: absolute;
+  top: 17%;
+  left: 1%;
+  background-image: url(svg/karma.svg);
+  background-size: cover;
+}
+
+#score {
+  position: absolute;
+  /* width: 10%; */
+  top: 16%;
+  left: 17.3%;
+  font-family: fantasy;
+  /* font-size: 2rem; */
+}
+
+/* delay */
+.delay1 {
+  animation-delay: 0s;
+}
+
+.delay2 {
+  animation-delay: 0.5s;
+}
+
+.delay3 {
+  animation-delay: 3s;
+}
+
+.delay4 {
+  animation-delay: 4s;
+}
+
+/* position */
+.pos1 {
+  top: -40%;
+  left: 34%;
+}
+
+.pos2 {
+  top: -40%;
+  left: 28%;
+}
+
+.pos3 {
+  top: -40%;
+  left: 45%;
+}
+
+.pos4 {
+  top: -40%;
+  left: 40%;
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes forsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.drej {
+  animation-name: drej_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes drej_kf {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.fald {
+  animation-name: fald_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.speed1 {
+  animation-duration: 2s;
+}
+
+.speed2 {
+  animation-duration: 3s;
+}
+
+.speed3 {
+  animation-duration: 5s;
+}
+
+@keyframes fald_kf {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(820%);
+  }
+}
+
+.zoom_out {
+  transform: scale(0, 0);
+  transition: transform 3s;
+}
+
+.forsink1 {
+  animation-delay: 3s;
+}
+
+.forsink2 {
+  animation-delay: 5s;
+}
+
+.timer {
+  animation-name: timer_kf;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* clip-path er en css maske (top sider bund) */
+@keyframes timer_kf {
+  0% {
+    clip-path: inset(0 0 0);
+  }
+
+  100% {
+    clip-path: inset(100% 0 0);
+  }
+}
+
+.gray {
+  filter: grayscale(80%);
+}

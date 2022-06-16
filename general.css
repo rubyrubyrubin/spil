@@ -1,0 +1,131 @@
+img {
+  max-width: 100%;
+}
+
+main img {
+  max-width: 100%;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-right: 50px;
+}
+
+header img {
+  top: 0.5%;
+  max-width: 100%;
+  width: 15%;
+  position: absolute;
+  bottom: 78%;
+}
+
+* {
+  all: unset;
+
+  display: revert;
+
+  cursor: revert;
+
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 3rem;
+}
+
+h2 {
+  /*font-size: 30px; */
+  font-size: 1.875rem;
+  margin-bottom: 4px;
+  line-height: 1.1;
+  font-family: fantasy;
+  padding-top: 30px;
+  padding-bottom: 1px;
+}
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.1;
+}
+
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  padding: 10px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  min-height: 100vh;
+  padding-bottom: 3px;
+}
+
+/* main {
+  /* margin-block: 3rem; */
+
+/* h1 {
+  color: black;
+} */
+
+/* h2 {
+  color: black;
+  margin-bottom: 20;
+} */
+
+h3 {
+  color: black;
+}
+
+p {
+  color: black;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  margin-bottom: 20;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+footer {
+  color: #edcce5;
+  text-align: center;
+  padding-block: 1rem;
+  background: #edcce5;
+  position: sticky;
+  top: 100vh;
+}
+
+nav ul {
+  list-style: none;
+  font-family: fantasy;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 300%;
+  font-size: 120%;
+  /* justify-content: space-evenly; */
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  margin-left: 10px;
+  padding-top: 13px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  gap: 70px;
+  color: black;
+}
+
+header nav li {
+  margin: 0.04rem;
+}
+
+nav .content a {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}

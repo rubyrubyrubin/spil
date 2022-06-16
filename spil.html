@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feed_creed</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="favicon.svg" alt="logo" /> </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="spil.html">SPIL</a>
+          </li>
+          <li>
+            <a href="ide.html">IDE</a>
+          </li>
+          <li>
+            <a href="teknik.html">TEKNIK</a>
+          </li>
+          <li>
+            <a href="design.html">DESIGN</a>
+          </li>
+
+          <li>
+            <a href="assetliste.html">ASSET LISTE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="background"></div>
+          <div id="game_elements">
+            <div id="cow_container">
+              <div id="cow_sprite"></div>
+            </div>
+            <div id="carrot_container">
+              <div id="carrot_sprite"></div>
+            </div>
+            <div id="chicken_container">
+              <div id="chicken_sprite"></div>
+            </div>
+            <div id="aubergine_container">
+              <div id="aubergine_sprite"></div>
+            </div>
+            <div id="broccoli_container">
+              <div id="broccoli_sprite"></div>
+            </div>
+            <div id="pig_container">
+              <div id="pig_sprite"></div>
+            </div>
+          </div>
+          <div id="game_foreground"></div>
+          <div id="game_ui">
+            <div id="settings"></div>
+            <div id="life">
+              <img id="life1" class="heart" src="svg/life.svg" alt="heart" />
+              <img id="life2" class="heart" src="svg/life.svg" alt="heart" />
+              <img id="life3" class="heart" src="svg/life.svg" alt="heart" />
+            </div>
+            <div id="karma"></div>
+            <p id="score">0</p>
+            <div id="time">
+              <div id="glas"></div>
+              <div id="sand"></div>
+            </div>
+          </div>
+        </div>
+        <!-- start -->
+        <div id="start_screen" class="hide">
+          <!-- <div id="start_txt">Klik på animal, ikke vegetable</div>  -->
+          <div id="start_knap"></div>
+        </div>
+        <!-- info screen
+        <div id="infoScreen" class="hide">
+          <div id="start_knap2"></div>
+        </div> -->
+        <!-- gameover -->
+        <div id="game_over" class="hide">
+          <div id="game_over_txt"></div>
+          <div id="game_over_points">??</div>
+          <div id="genstart1"></div>
+          <div id="exit1"></div>
+        </div>
+        <!-- level complete -->
+        <div id="level_complete" class="hide">
+          <div id="level_complete_txt"></div>
+          <div id="level_complete_points">??</div>
+          <div id="genstart2"></div>
+          <div id="exit2"></div>
+        </div>
+      </div>
+
+      <div id="sounds">
+        <audio src="lyd/feed_creed.mp3" id="feed_creed"></audio>
+        <audio src="lyd/aww_nooo.mp3" id="aww_nooo"></audio>
+        <audio src="lyd/phew.mp3" id="phew"></audio>
+        <audio src="lyd/mmhhmm.mp3" id="mmhhmm"></audio>
+        <audio src="lyd/my_name.mp3" id="my_name"></audio>
+        <audio src="lyd/dubstep.m4a" id="dubstep"></audio>
+        <audio src="groan.mp3" id="groan"></audio>
+        <audio src="huh.wav" id="huh"></audio>
+        <audio src="ahh.mp3" id="ahh"></audio>
+        <audio src="veg.wav" id="veg"></audio>
+        <audio src="laugh.mp3" id="laugh"></audio>
+      </div>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
